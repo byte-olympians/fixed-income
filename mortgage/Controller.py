@@ -8,8 +8,8 @@ class Controller(object):
 
     def __init__(self):
         super(Controller, self).__init__()
-        self.view = GraphView()
-        # self.view = PrintView()
+        #self.view = GraphView()
+        self.view = PrintView()
 
     def calculate_mortgage_schedule(self):
         principal = 200000
