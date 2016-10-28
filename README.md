@@ -28,7 +28,7 @@ eg. How much is $1000 invested for two years at an annual interest rate of 5% wo
 <code>FV = 1000 * (1 + 0.05)<sup>2</sup> = 1102.50</code>
 
 ```
-FV = 1000 ( 1 + 2 * (1) * (0.05) + 0.05 * 0.05 ) 
+FV = 1000 ( 1 + (2 * 0.05) + (0.05 * 0.05) ) 
 Where
 1000: Principal
 2 * 0.05: Simple Interest
