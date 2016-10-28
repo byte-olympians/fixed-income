@@ -28,11 +28,11 @@ eg. How much is $1000 invested for two years at an annual interest rate of 5% wo
 <code>FV = 1000 * (1 + 0.05)<sup>2</sup> = 1102.50</code>
 
 ```
-FV = 1000 + 2 * (1.05) + 0.05 * 0.05 * 1000 
+FV = 1000 ( 1 + 2 * (1) * (0.05) + 0.05 * 0.05 ) 
 Where
 1000: Principal
-2 * 1.05: Simple Interest
-0.05 * 0.05 * 1000: Compond Interest (Interest on Interest)
+2 * 0.05: Simple Interest
+0.05 * 0.05: Compond Interest (Interest on Interest)
 ```
 
 Conversely, Present Value is the Future Value **discounted** by the Interest rate. To get the past value of money in the future you have to divide it by the interest at which it grew. Answers the question, how much is money in the future worth today ? 
