@@ -19,8 +19,8 @@ class Controller:
     def cumulative_pmt_schedule(self, mortgage):
         schedule = self.calculator.cumulative_schedule(mortgage)
         self.view["View Schedule"].render(schedule)
-        self.view["View Graph"].render(schedule)
+        self.view["View Graph"].render(schedule, "Y")
         
 controller = Controller()
-# controller.mortgage_schedule(Mortgage(1000000, 0.04, 30, 30))
+controller.mortgage_schedule(Mortgage(1000000, 0.04, 30, 30))
 controller.cumulative_pmt_schedule(Mortgage(1000000, 0.04, 30, 30))
