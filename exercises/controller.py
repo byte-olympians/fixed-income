@@ -10,12 +10,17 @@ class Controller:
         self.calculator = Calculator()
         self.view = {"View Graph": GraphView(), "View Schedule": ScheduleView()}
 
-    def calculate_mortgage_schedule(self, mortgage):
+    def mortgage_schedule(self, mortgage):
         # Run the calculation
         schedule = self.calculator.pmt_schedule(mortgage)
         self.view["View Schedule"].render(schedule)
         self.view["View Graph"].render(schedule)
-
+    
+    def cumulative_pmt_schedule(self, mortgage):
+        schedule = self.calculator.cumulative_schedule(mortgage)
+        self.view["View Schedule"].render(schedule)
+        self.view["View Graph"].render(schedule)
         
 controller = Controller()
-controller.calculate_mortgage_schedule(Mortgage(1000000, 0.04, 30, 30))
+# controller.mortgage_schedule(Mortgage(1000000, 0.04, 30, 30))
+controller.cumulative_pmt_schedule(Mortgage(1000000, 0.04, 30, 30))
